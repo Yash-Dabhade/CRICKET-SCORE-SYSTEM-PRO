@@ -1,13 +1,14 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
 #include<string.h>
 #include<stdio.h>
+using namespace std;
 int r(int);
 int eb(int);
 int ebn(int);
 int targetrr(int,int);
 int main()
-{
+{    system("color 02");
     int balls=0,runs=0,wickets=0,choice,exit=0,extrab,extranob,match,overs=0;
     char c1[3],c2[3],std[30];
     int matchovers=0,target=0;
@@ -26,7 +27,8 @@ int main()
     cin>>c2;
     strupr(c1);
     strupr(c2);
-    clrscr();
+    system("CLS");
+    system("color 06");
     int c1runs,c2run,rr;
     do
     {
@@ -104,10 +106,10 @@ int main()
     {
      exit++;
     }
-    clrscr();
+    system("CLS");
     }while(exit<=0);
     cout<<"\n\t\t\t||||THANK YOU||||||";
-    getch();
+    system("PAUSE");
 }
 
 int r(int t)
